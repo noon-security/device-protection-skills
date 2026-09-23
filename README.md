@@ -12,6 +12,14 @@ These failures usually mean Device Protection blocked a malicious or policy-rest
 
 See [`skills/aikido-device-protection/SKILL.md`](skills/aikido-device-protection/SKILL.md).
 
+### aikido-mcp-comments
+
+Reads the comments already posted on a GitHub, GitLab, or Azure DevOps pull/merge request, including Aikido's own scan-result comment, through the native SCM CLI (`gh`, `glab`, `az`) rather than the Aikido MCP server.
+
+Triggers when you ask what CI/CD said on a PR, or want the pipeline/Aikido comments read back or summarized.
+
+See [`skills/aikido-mcp-comments/SKILL.md`](skills/aikido-mcp-comments/SKILL.md).
+
 ## Installation
 
 Copy the skill directory into your project's `.claude/skills/` folder, or install it as a plugin per your setup.
