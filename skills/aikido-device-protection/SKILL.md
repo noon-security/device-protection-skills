@@ -1,6 +1,6 @@
 ---
 name: aikido-device-protection
-description: Use on ANY unexplained package install failure — HTTP 403, connection reset, or a version resolving older than expected — across npm, pip, Maven, NuGet, Go, Cargo, Composer, gem, and editor or browser extensions. These usually mean Aikido Device Protection blocked a malicious or policy-restricted package, but they look identical to an expired token. Run `aikidoctl events --json` to check BEFORE debugging credentials, editing registry config, switching package manager or registry, fetching a tarball or cloning source directly, disabling TLS verification, installing inside a container, or pausing the Aikido agent.
+description: Use on ANY unexplained package install failure — HTTP 403, connection reset, or a version resolving older than expected — across npm, pip, Maven, NuGet, Go, Cargo, Composer, gem, Homebrew, and editor or browser extensions. These usually mean Aikido Device Protection blocked a malicious or policy-restricted package, but they look identical to an expired token. Run `aikidoctl events --json` to check BEFORE debugging credentials, editing registry config, switching package manager or registry, fetching a tarball or cloning source directly, disabling TLS verification, installing inside a container, or pausing the Aikido agent.
 ---
 
 A block is a security decision, not a broken build. You can't tell from the shell whether it's a false positive or the attack it just stopped. Being asked to install a package is not authorization to obtain it another way.
