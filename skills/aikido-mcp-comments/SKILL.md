@@ -31,8 +31,9 @@ Run the command directly, don't pre-check install or auth state first. See
 
 ## 4. Recover from failure
 
-- **Command not found**: install the CLI (see reference.md for the install command), then
-  retry the same fetch.
+- **Command not found**: don't install it yourself. Tell the user the CLI is missing, show the
+  install command from reference.md, and ask for permission before running it. Only proceed
+  once they say yes, then retry the same fetch.
 - **Auth error** (401/403, or the CLI reports not logged in): print the exact login command
   for that platform, ask the user to run it (it's an interactive browser flow you can't
   complete yourself), wait for their confirmation, then retry.
